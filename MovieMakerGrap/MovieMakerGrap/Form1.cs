@@ -14,7 +14,22 @@ namespace MovieMakerGrap
     {
         public MainWindow()
         {
+
+            // initilize global variables
+            String tSourceWlmp = String.Empty;
+            String tTargetFolder = String.Empty;
+
+            Int64 iMove = 0;
+            Int64 iAudio = 0;
+            Int64 iPicture = 0;
+            
             InitializeComponent();
+
+            // Initilize the Text Box
+            tAudio.Text = Convert.ToString(iAudio);
+            tMovie.Text = Convert.ToString(iMove);
+            tPicture.Text = Convert.ToString(iPicture);
+
         }
     }
 }

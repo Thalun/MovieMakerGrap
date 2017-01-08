@@ -33,18 +33,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxPhat2Store = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bSelectWlmp = new System.Windows.Forms.Button();
             this.bSelectFolder = new System.Windows.Forms.Button();
+            this.bSelectWlmp = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tMovie = new System.Windows.Forms.TextBox();
-            this.tPicture = new System.Windows.Forms.TextBox();
-            this.tAudio = new System.Windows.Forms.TextBox();
-            this.bAnalyse = new System.Windows.Forms.Button();
-            this.bGo = new System.Windows.Forms.Button();
             this.bReset = new System.Windows.Forms.Button();
+            this.tAudio = new System.Windows.Forms.TextBox();
+            this.bGo = new System.Windows.Forms.Button();
+            this.bAnalyse = new System.Windows.Forms.Button();
+            this.tPicture = new System.Windows.Forms.TextBox();
+            this.tMovie = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -102,16 +102,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Files and Path";
             // 
-            // bSelectWlmp
-            // 
-            this.bSelectWlmp.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bSelectWlmp.Location = new System.Drawing.Point(385, 20);
-            this.bSelectWlmp.Name = "bSelectWlmp";
-            this.bSelectWlmp.Size = new System.Drawing.Size(71, 23);
-            this.bSelectWlmp.TabIndex = 4;
-            this.bSelectWlmp.Text = "Select";
-            this.bSelectWlmp.UseVisualStyleBackColor = true;
-            // 
             // bSelectFolder
             // 
             this.bSelectFolder.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -121,6 +111,16 @@
             this.bSelectFolder.TabIndex = 5;
             this.bSelectFolder.Text = "Select";
             this.bSelectFolder.UseVisualStyleBackColor = true;
+            // 
+            // bSelectWlmp
+            // 
+            this.bSelectWlmp.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bSelectWlmp.Location = new System.Drawing.Point(385, 20);
+            this.bSelectWlmp.Name = "bSelectWlmp";
+            this.bSelectWlmp.Size = new System.Drawing.Size(71, 23);
+            this.bSelectWlmp.TabIndex = 4;
+            this.bSelectWlmp.Text = "Open";
+            this.bSelectWlmp.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -140,49 +140,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "File Statistic";
             // 
-            // label3
+            // bReset
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 23);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 16);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Movies:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(18, 51);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 16);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Picture";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(18, 78);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 16);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Audio:";
-            // 
-            // tMovie
-            // 
-            this.tMovie.Location = new System.Drawing.Point(87, 19);
-            this.tMovie.Name = "tMovie";
-            this.tMovie.Size = new System.Drawing.Size(78, 20);
-            this.tMovie.TabIndex = 3;
-            // 
-            // tPicture
-            // 
-            this.tPicture.Location = new System.Drawing.Point(87, 45);
-            this.tPicture.Name = "tPicture";
-            this.tPicture.Size = new System.Drawing.Size(78, 20);
-            this.tPicture.TabIndex = 4;
+            this.bReset.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bReset.Location = new System.Drawing.Point(385, 71);
+            this.bReset.Name = "bReset";
+            this.bReset.Size = new System.Drawing.Size(71, 23);
+            this.bReset.TabIndex = 8;
+            this.bReset.Text = "Reset";
+            this.bReset.UseVisualStyleBackColor = true;
             // 
             // tAudio
             // 
@@ -190,16 +156,6 @@
             this.tAudio.Name = "tAudio";
             this.tAudio.Size = new System.Drawing.Size(78, 20);
             this.tAudio.TabIndex = 5;
-            // 
-            // bAnalyse
-            // 
-            this.bAnalyse.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bAnalyse.Location = new System.Drawing.Point(385, 16);
-            this.bAnalyse.Name = "bAnalyse";
-            this.bAnalyse.Size = new System.Drawing.Size(71, 23);
-            this.bAnalyse.TabIndex = 6;
-            this.bAnalyse.Text = "Check";
-            this.bAnalyse.UseVisualStyleBackColor = true;
             // 
             // bGo
             // 
@@ -211,15 +167,59 @@
             this.bGo.Text = "Go";
             this.bGo.UseVisualStyleBackColor = true;
             // 
-            // bReset
+            // bAnalyse
             // 
-            this.bReset.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bReset.Location = new System.Drawing.Point(385, 71);
-            this.bReset.Name = "bReset";
-            this.bReset.Size = new System.Drawing.Size(71, 23);
-            this.bReset.TabIndex = 8;
-            this.bReset.Text = "Reset";
-            this.bReset.UseVisualStyleBackColor = true;
+            this.bAnalyse.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bAnalyse.Location = new System.Drawing.Point(385, 16);
+            this.bAnalyse.Name = "bAnalyse";
+            this.bAnalyse.Size = new System.Drawing.Size(71, 23);
+            this.bAnalyse.TabIndex = 6;
+            this.bAnalyse.Text = "Check";
+            this.bAnalyse.UseVisualStyleBackColor = true;
+            // 
+            // tPicture
+            // 
+            this.tPicture.Location = new System.Drawing.Point(87, 45);
+            this.tPicture.Name = "tPicture";
+            this.tPicture.Size = new System.Drawing.Size(78, 20);
+            this.tPicture.TabIndex = 4;
+            // 
+            // tMovie
+            // 
+            this.tMovie.Location = new System.Drawing.Point(87, 19);
+            this.tMovie.Name = "tMovie";
+            this.tMovie.Size = new System.Drawing.Size(78, 20);
+            this.tMovie.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(18, 78);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(45, 16);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Audio:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(18, 51);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 16);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Picture";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(18, 23);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 16);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Movies:";
             // 
             // MainWindow
             // 
