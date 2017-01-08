@@ -121,6 +121,7 @@
             this.bSelectWlmp.TabIndex = 4;
             this.bSelectWlmp.Text = "Open";
             this.bSelectWlmp.UseVisualStyleBackColor = true;
+            this.bSelectWlmp.Click += new System.EventHandler(this.bSelectWlmp_Click);
             // 
             // groupBox2
             // 

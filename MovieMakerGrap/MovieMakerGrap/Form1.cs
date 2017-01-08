@@ -10,19 +10,21 @@ using System.Windows.Forms;
 
 namespace MovieMakerGrap
 {
+
     public partial class MainWindow : Form
     {
+        // initilize global variables
+        String tSourceWlmp = String.Empty;
+        String tTargetFolder = String.Empty;
+
+        // initilize global variables
+        Int64 iMove = 0;
+        Int64 iAudio = 0;
+        Int64 iPicture = 0;
+
         public MainWindow()
         {
-
-            // initilize global variables
-            String tSourceWlmp = String.Empty;
-            String tTargetFolder = String.Empty;
-
-            Int64 iMove = 0;
-            Int64 iAudio = 0;
-            Int64 iPicture = 0;
-            
+           
             InitializeComponent();
 
             // Initilize the Text Box
@@ -30,6 +32,20 @@ namespace MovieMakerGrap
             tMovie.Text = Convert.ToString(iMove);
             tPicture.Text = Convert.ToString(iPicture);
 
+        }
+
+        private void bSelectWlmp_Click(object sender, EventArgs e)
+        {
+            // Select a Microsoft Movie maker Project File
+
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "Movie Maker Project (*.wlmp) | *.wlmp";
+
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                tSourceWlmp = openFile.FileName;
+                textBoxWlmp.Text = openFile.FileName;
+            }                
         }
     }
 }
