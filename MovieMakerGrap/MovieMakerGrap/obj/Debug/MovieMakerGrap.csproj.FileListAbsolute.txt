@@ -1,9 +1,0 @@
-D:\daten\GitHub\MovieMakerGrap\MovieMakerGrap\MovieMakerGrap\bin\Debug\MovieMakerGrap.exe.config
-D:\daten\GitHub\MovieMakerGrap\MovieMakerGrap\MovieMakerGrap\bin\Debug\MovieMakerGrap.exe
-D:\daten\GitHub\MovieMakerGrap\MovieMakerGrap\MovieMakerGrap\bin\Debug\MovieMakerGrap.pdb
-D:\daten\GitHub\MovieMakerGrap\MovieMakerGrap\MovieMakerGrap\obj\Debug\MovieMakerGrap.csprojResolveAssemblyReference.cache
-D:\daten\GitHub\MovieMakerGrap\MovieMakerGrap\MovieMakerGrap\obj\Debug\MovieMakerGrap.Properties.Resources.resources
-D:\daten\GitHub\MovieMakerGrap\MovieMakerGrap\MovieMakerGrap\obj\Debug\MovieMakerGrap.csproj.GenerateResource.Cache
-D:\daten\GitHub\MovieMakerGrap\MovieMakerGrap\MovieMakerGrap\obj\Debug\MovieMakerGrap.exe
-D:\daten\GitHub\MovieMakerGrap\MovieMakerGrap\MovieMakerGrap\obj\Debug\MovieMakerGrap.pdb
-D:\daten\GitHub\MovieMakerGrap\MovieMakerGrap\MovieMakerGrap\obj\Debug\MovieMakerGrap.MainWindow.resources
