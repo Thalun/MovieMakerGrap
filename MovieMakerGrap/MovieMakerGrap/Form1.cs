@@ -8,63 +8,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MovieMakerGrapWlmp;
 
 namespace MovieMakerGrap
 {
-
     public partial class MainWindow : Form
     {
         // initilize global variables
         String tSourceWlmp = String.Empty;
         String tTargetFolder = String.Empty;
 
-        // initilize global variables
-        Int64 iMove = 0;
-        Int64 iAudio = 0;
-        Int64 iPicture = 0;
+        wlmp mywlmp = new wlmp();
 
         public MainWindow()
         {
             InitializeComponent();
 
             // Initilize the Text Box
-            tAudio.Text = Convert.ToString(iAudio);
-            tMovie.Text = Convert.ToString(iMove);
-            tPicture.Text = Convert.ToString(iPicture);
+            tAudio.Text = Convert.ToString(mywlmp.iAudio);
+            tMovie.Text = Convert.ToString(mywlmp.iMove);
+            tPicture.Text = Convert.ToString(mywlmp.iPicture);
         }
 
         private void bSelectWlmp_Click(object sender, EventArgs e)
         {
-            // Select a Microsoft Movie maker Project File
-
-            OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "Movie Maker Project (*.wlmp) | *.wlmp";
-
-            if (openFile.ShowDialog() == DialogResult.OK)
+            // Select a Microsoft Movie Maker Project File
+            mywlmp.SelectSourceFile (mywlmp);            
+            if (mywlmp.strSourceFile != String.Empty)
             {
-                tSourceWlmp = openFile.FileName;
-                textBoxWlmp.Text = openFile.FileName;
-            }                
+                textBoxWlmp.Text = mywlmp.strSourceFile;
+            }
         }
 
         private void bSelectFolder_Click(object sender, EventArgs e)
         {
             // Select the folder to store your collected media
-
-            FolderBrowserDialog selectFolder = new FolderBrowserDialog();
-            selectFolder.Description = "Where do you want to collect your media files?";
-            selectFolder.SelectedPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-
-            DialogResult objResult = selectFolder.ShowDialog(this);
-
-            if (objResult == DialogResult.OK)
+            mywlmp.SelectDestinationFolder(mywlmp);
+            if (mywlmp.strDestinationFolder != String.Empty)
             {
-                textBoxPath2Store.Text = selectFolder.SelectedPath;
-                tTargetFolder = selectFolder.SelectedPath;
-            }
-            else
-            {
-                MessageBox.Show("You have aboard the Dialog !");
+                textBoxPath2Store.Text = mywlmp.strDestinationFolder;
             }
         }
     }
