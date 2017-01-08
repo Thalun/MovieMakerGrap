@@ -17,6 +17,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# VS binaries
+/Debug/
+/Release/
+
 # =========================
 # Operating System Files
 # =========================
