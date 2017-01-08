@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,14 +25,12 @@ namespace MovieMakerGrap
 
         public MainWindow()
         {
-           
             InitializeComponent();
 
             // Initilize the Text Box
             tAudio.Text = Convert.ToString(iAudio);
             tMovie.Text = Convert.ToString(iMove);
             tPicture.Text = Convert.ToString(iPicture);
-
         }
 
         private void bSelectWlmp_Click(object sender, EventArgs e)
@@ -46,6 +45,27 @@ namespace MovieMakerGrap
                 tSourceWlmp = openFile.FileName;
                 textBoxWlmp.Text = openFile.FileName;
             }                
+        }
+
+        private void bSelectFolder_Click(object sender, EventArgs e)
+        {
+            // Select the folder to store your collected media
+
+            FolderBrowserDialog selectFolder = new FolderBrowserDialog();
+            selectFolder.Description = "Where do you want to collect your media files?";
+            selectFolder.SelectedPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            DialogResult objResult = selectFolder.ShowDialog(this);
+
+            if (objResult == DialogResult.OK)
+            {
+                textBoxPath2Store.Text = selectFolder.SelectedPath;
+                tTargetFolder = selectFolder.SelectedPath;
+            }
+            else
+            {
+                MessageBox.Show("You have aboard the Dialog !");
+            }
         }
     }
 }

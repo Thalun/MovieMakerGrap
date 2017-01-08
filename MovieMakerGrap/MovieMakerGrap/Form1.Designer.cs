@@ -31,7 +31,7 @@
             this.textBoxWlmp = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxPhat2Store = new System.Windows.Forms.TextBox();
+            this.textBoxPath2Store = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.bSelectFolder = new System.Windows.Forms.Button();
             this.bSelectWlmp = new System.Windows.Forms.Button();
@@ -51,6 +51,7 @@
             // 
             // textBoxWlmp
             // 
+            this.textBoxWlmp.Enabled = false;
             this.textBoxWlmp.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxWlmp.Location = new System.Drawing.Point(156, 21);
             this.textBoxWlmp.Name = "textBoxWlmp";
@@ -78,14 +79,15 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Path to Store Media:";
             // 
-            // textBoxPhat2Store
+            // textBoxPath2Store
             // 
-            this.textBoxPhat2Store.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPhat2Store.Location = new System.Drawing.Point(156, 49);
-            this.textBoxPhat2Store.Name = "textBoxPhat2Store";
-            this.textBoxPhat2Store.Size = new System.Drawing.Size(213, 22);
-            this.textBoxPhat2Store.TabIndex = 3;
-            this.textBoxPhat2Store.Text = "Path to Store your Media";
+            this.textBoxPath2Store.Enabled = false;
+            this.textBoxPath2Store.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPath2Store.Location = new System.Drawing.Point(156, 49);
+            this.textBoxPath2Store.Name = "textBoxPath2Store";
+            this.textBoxPath2Store.Size = new System.Drawing.Size(213, 22);
+            this.textBoxPath2Store.TabIndex = 3;
+            this.textBoxPath2Store.Text = "Path to Store your Media";
             // 
             // groupBox1
             // 
@@ -93,7 +95,7 @@
             this.groupBox1.Controls.Add(this.bSelectWlmp);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBoxWlmp);
-            this.groupBox1.Controls.Add(this.textBoxPhat2Store);
+            this.groupBox1.Controls.Add(this.textBoxPath2Store);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
@@ -111,6 +113,7 @@
             this.bSelectFolder.TabIndex = 5;
             this.bSelectFolder.Text = "Select";
             this.bSelectFolder.UseVisualStyleBackColor = true;
+            this.bSelectFolder.Click += new System.EventHandler(this.bSelectFolder_Click);
             // 
             // bSelectWlmp
             // 
@@ -157,6 +160,7 @@
             this.tAudio.Name = "tAudio";
             this.tAudio.Size = new System.Drawing.Size(78, 20);
             this.tAudio.TabIndex = 5;
+            this.tAudio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // bGo
             // 
@@ -184,6 +188,7 @@
             this.tPicture.Name = "tPicture";
             this.tPicture.Size = new System.Drawing.Size(78, 20);
             this.tPicture.TabIndex = 4;
+            this.tPicture.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tMovie
             // 
@@ -191,6 +196,7 @@
             this.tMovie.Name = "tMovie";
             this.tMovie.Size = new System.Drawing.Size(78, 20);
             this.tMovie.TabIndex = 3;
+            this.tMovie.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label5
             // 
@@ -244,7 +250,7 @@
         private System.Windows.Forms.TextBox textBoxWlmp;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxPhat2Store;
+        private System.Windows.Forms.TextBox textBoxPath2Store;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button bSelectFolder;
         private System.Windows.Forms.Button bSelectWlmp;
